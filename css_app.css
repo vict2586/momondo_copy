@@ -1,0 +1,1044 @@
+/* ------------------------------------------------------------------------------- */
+/* -- Global HTML styling -- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* -- Global classes -- */
+
+.hide { display: none;}
+
+.flex { display: flex;}
+.gab { gap: 1rem;}
+
+.w100 { width: 100%;}
+
+.pr { position: relative;}
+
+.op { opacity: 50%;}
+
+.cg{ color: gray; }
+
+
+.he17 { height: 17rem !important;}
+.he19 { height: 19rem !important;}
+
+.h19 { height: 19rem;}
+.ts { text-align: start;}
+.fw { font-weight: bold;}
+.tx { color: white; text-align: center;}
+
+
+.fs1 { font-size: 1rem;}
+.fs09 { font-size: 0.9rem;}
+.fs08 { font-size: 0.8rem;}
+
+
+.bn { border: none !important;}
+.mt4I { margin-top: 4rem !important; }
+
+.pt { padding-top: 1rem;}
+.pl { padding-left: 1rem;}
+.ptb { padding: 0.5rem 0;}
+
+.mt04 { margin-top: 0.4rem; }
+.mt1 { margin-top: 1rem; }
+.mt2 { margin-top: 2rem; }
+.mt3 { margin-top: 3rem; }
+.mt4 { margin-top: 4rem; }
+.mb1 { margin-bottom: 1rem; }
+.mb2 { margin-bottom: 2rem; }
+.mb3 { margin-bottom: 3rem; }
+
+.bt11 { border-top: 1px solid #6b15c1;}
+.bb11 { border-bottom: 1px solid #6b15c1;}
+.bb21 { border-bottom: 1px solid #0095cc;}
+
+/* ------------------------------------------------------------------------------- */
+/* -- Global HTML elememt styling -- */
+
+h1,h2{
+    color: #fff;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+h3{
+    color: white;
+    text-align: center;
+}
+
+body{
+    background: rgba(33, 3, 58, 1);
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+main{
+    padding: 1rem;
+    color: #fff;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80vw;
+    margin: auto;
+}
+
+form div{
+    background: #0095cc;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    width: 100%;
+    height: 100%;
+}
+
+.formContainer{
+    height: 3.6rem;
+    background: #f3f0f5;
+}
+
+.formSVG{
+    width: 2rem;
+    height: 2rem;
+    margin: 0.8rem 0;
+    padding: 0;
+    background: none;
+}
+
+.formSVG svg{
+    width: 100% !important;
+}
+
+input, button{
+    height: 3rem;
+    border-radius: 0.4rem;
+    border: none;
+}
+
+input{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #f3f0f5;
+}
+
+button{
+    padding: 0 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* -- Uploade image form -- */
+
+#imageForm{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80vw;
+    margin: auto;
+    height: 100%;
+}
+
+#imageForm div{
+    background: white;
+}
+
+#imageForm .formContainer{
+    height: auto;
+    background: #f3f0f5;
+}
+
+#imageForm .formContainer input{
+    height: auto;
+    background: #f3f0f5;
+    color: black;
+}
+
+#imageForm .fakeContainer{
+    height: auto;
+    background: #dfdede;
+    cursor: pointer;
+}
+
+#imageForm .fakeContainer input{
+    height: auto;
+    background: none;
+    color: black;
+}
+
+.fakeButton{
+    cursor: pointer;
+}
+
+.fakeContainer:hover{
+    opacity: 80%;
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* -- Login popup -- */
+
+#login {
+    background: white;
+    position: relative;
+    z-index: 2;
+    margin: auto;
+}
+
+#login img{
+    padding: 0.4rem;
+}
+
+#login .comp_logo{
+    display: block;
+}
+
+#login .comp_logo img{
+    width: 7rem;
+    height: 2rem;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+}
+
+.closeLogin{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.closeLogin button{
+    background: none;
+    cursor: pointer;
+}
+
+.loginText{
+    text-align: start;
+    color: black;
+    margin: 0 0.5rem 0 2.1rem;
+}
+
+.loginText h2{
+    color: black;
+    text-align: start;
+}
+
+.loginForm{
+    margin: 0.5rem auto 0 auto;
+}
+
+.loginForm label{
+    margin: 0 auto 0 0;
+}
+
+.loginForm input{
+    border: 1px solid #dfdede;
+    border-radius: 0;
+    width: 100%;
+    height: 2rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.loginForm input:focus{
+    outline: 1px solid #0095cc;
+}
+
+.loginForm button{
+    width: 100%;
+    height: 2rem;
+    border: none;
+    color: white;
+    border-radius: 0;
+    cursor: pointer;
+    background: linear-gradient(135deg,#de1666 0%,#73146f 100%);
+    text-align: center;
+}
+
+.loginForm button:hover{
+    opacity: 80%;
+    text-decoration: underline;
+}
+
+.singupbutton{
+    width: 80vw;
+    height: 2rem;
+    border: none;
+    border-radius: 0;
+    margin: 0.5rem 0 0.5rem 2.1rem; 
+    background: #dfdede; 
+    cursor: pointer;
+}
+
+.singupbutton:hover{
+    opacity: 80%;
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* -- Signup popup -- */
+
+#signup {
+    background: white;
+    position: relative;
+    z-index: 3;
+    margin: auto;
+    height: 100vh;
+}
+
+.closeSignup{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+#signup .comp_logo{
+    display: block;
+}
+
+#signup .comp_logo img{
+    width: 7rem;
+    height: 2rem;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+}
+
+.closeSignup button{
+    background: none;
+    cursor: pointer;
+}
+
+.signupForm{
+    margin: 0.5rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.signupForm label{
+    margin: 0 auto 0 0;
+}
+
+.signupForm input{
+    border: 1px solid #dfdede;
+    border-radius: 0;
+    width: 100%;
+    height: 2rem;
+    margin: 0 0 1rem 0;
+}
+
+.signupForm input:focus{
+    outline: 1px solid #0095cc;
+}
+
+.signupForm button{
+    width: 100%;
+    height: 2rem;
+    border: none;
+    color: white;
+    border-radius: 0;
+    background: linear-gradient(135deg,#de1666 0%,#73146f 100%);
+    margin: 1rem 0 0 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.signupForm button:hover{
+    opacity: 80%;
+    text-decoration: underline;
+}
+
+.signupBack{
+    font-size: 0.9rem;
+    margin: 0.5rem 2rem 1rem 2rem;
+    cursor: pointer;
+    color: #0095cc;
+}
+
+.signupBack:hover{
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* -- Error -- */
+
+.loginForm input.validate_error{
+    outline: 2px solid red;
+    background: rgba(240, 130, 130, 0.2);
+}
+
+.signupForm input.validate_error{
+    outline: 2px solid red;
+    background: rgba(240, 130, 130, 0.2);
+}
+
+.validate_errors{
+    color: red;
+    font-size: 0.9rem;
+    margin: 0 0 0.5rem 1.2rem;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* -- Search flights form buttens -- */
+
+.switch{
+    width: 30%;
+    height: 100%;
+    background: white;
+    padding: 0;
+}
+
+.switch svg{
+    fill: black;
+    width: 100%;   
+}
+
+.search{
+    padding: 0 1rem;
+    width: 5rem;
+    height: 5rem;
+    align-items: center;
+    border: none;
+    color: #fff;
+    background: linear-gradient(135deg,#de1666 0%,#73146f 100%);
+    border-radius: 100%;
+}
+
+/* ------------------------------------- */
+/* -- Search flight page elements -- */
+
+#searchFlight{
+    width: 90vw;
+    margin: 1rem auto;
+}
+
+#flights{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.flight{
+    padding: 0 0 0 0.5rem;
+    background: white;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 2rem 0;
+}
+
+.flightInbut{
+    padding: 0 0.4rem;
+}
+
+.flightInbut input{
+    width: 1rem;
+}
+
+.flightContainer{
+    padding: 0.4rem;
+}
+
+.flightContainer p{
+    padding: 0.5rem 0 0 0;
+    font-size: 0.9rem;
+}
+
+.flightContainer p b{
+    font-size: 0.9rem;
+}
+
+.flightPrice{
+    padding: 0.4rem;
+    background: #edecec;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.flightPrice button{
+    background: #15986d;
+    height: 2rem;
+    font-size: 0.9rem;
+    color: white;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* -- Menu -- */
+
+#menu{
+    position: fixed;
+    top: 0;
+    left: -200vw;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 20%);
+    z-index: 1;
+    transition: 0.5s linear;
+}
+
+#menu.active {
+    left: 0;
+}
+
+#menu .left{
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    color: white;
+    background: #21033a;
+    position: fixed;
+    overflow-y: scroll;
+}
+
+.left a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem 1rem 0;
+    font-size: 0.9rem;
+}
+
+.left a svg{
+    fill: #fff;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.left .loginbut{
+    background: none;
+    padding: 0;
+    padding: 0;
+    margin: 0 0.7rem 1rem 0;
+    cursor: pointer;
+}
+
+.left .loginbut svg{
+    fill: #fff;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.logind{
+    color: white;
+    background: none;
+    font-size: 0.9rem;
+    padding: 0;
+    margin: 0 1rem 0 0;
+    cursor: pointer;
+}
+
+.logind:hover, .left a:hover{
+    text-decoration: underline;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* -- Nav -- */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+    height: 4rem;
+    background: #21033a;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    color: #fff;
+    top: 0;
+
+}
+
+nav img{
+    width: 1.5rem;
+    top: 0.5rem;
+    position: relative;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+}
+
+nav button{
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: #fff;
+}
+
+nav div{
+    display: flex;
+}
+
+nav div a{
+    padding: 0 0.5rem 0 0;
+    margin-bottom: 1rem;
+    position: relative;
+    top: -0.1rem;
+}
+
+nav div .loginLink{
+    margin: 0;
+    cursor: pointer;
+}
+
+nav div .loginLink:hover{
+    text-decoration: underline;
+}
+
+nav div .profileLink{
+    top: 0.2rem;
+}
+
+nav div .profileLink:hover{
+    text-decoration: underline;
+}
+
+nav div .loginbut svg{
+    fill: #fff;
+}
+
+nav div .loginbut{
+    padding: 0;
+    width: 1.5rem; 
+    height: 1.5rem; 
+    position: relative; 
+    top: 0.3rem;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* -- Boxes with icons -- */
+
+#options{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #fff;
+    margin: auto;
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #6b15c1;
+    padding: 1rem 0;
+    width: 80vw;
+}
+
+.option .left{
+    width: 3rem;
+    margin: 1rem;
+}
+
+.option svg{
+    fill: #fff;
+}
+
+.option .right .top{
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.option .right .bottom{
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* -- Big image -- */
+
+#cards{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.card{
+    color: white;
+    background: #21033a;
+    border: 1px solid #6b15c1;
+    border-radius: 0.5rem;
+    width: 80vw;
+    margin: auto;
+}
+
+.card p{
+    padding: 0 1rem;
+    font-size: 0.8rem;
+}
+
+.card img{
+    width: 100%;
+    border-bottom: 1px solid #6b15c1;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card button{
+    background: #6b15c1;
+    color: #fff;
+    margin: 1rem 0 1rem 1rem;
+    width: 6rem;
+    height: 2rem;
+    font-size: 0.9rem;
+    border-radius: 0.3rem;
+    padding: 0;
+    font-weight: bold;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* -- Carrusel -- */
+
+#carrusel1{
+    color: #fff;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 80vw;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.vis_alle{
+    height: 2rem;
+    width: 9rem;
+    font-size: 0.8rem;
+    background: white;
+    font-weight: bold;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+    align-self: center;
+}
+
+#carrusel1 img{
+    height: 10rem;
+    width: 80vw;
+    border-radius: 0.5rem;
+}
+
+/* ------------------------------------- */
+/* -- Carrusel -- */
+
+#carrusel2{
+    color: #fff;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 80vw;
+    margin: auto;
+    overflow-x: hidden;
+    height: 23rem;
+    overflow-y: hidden;
+}
+
+#carrusel2 img{
+    height: 10rem;
+    width: 80vw;
+    border-radius: 0.5rem;
+}
+
+/* ------------------------------------- */
+/* -- Carrusel -- */
+
+#carrusel3{
+    color: #fff;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 80vw;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.vis_alle{
+    height: 2rem;
+    width: 9rem;
+    font-size: 0.8rem;
+    background: white;
+    font-weight: bold;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+    align-self: center;
+}
+
+#carrusel3 img{
+    height: 10rem;
+    width: 80vw;
+    border-radius: 0.5rem;
+}
+
+#carrusel3 .carrusel_mobil_text{
+    width: 70%;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* -- Small box with image -- */
+
+#min-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.min-cards{
+    background: #fff;
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    height: 5rem;
+    width: 80vw;
+    margin-bottom: 1rem;
+}
+
+.img_button{
+    position: absolute;
+    left: 17rem;
+    top: 3rem;
+    background: white;
+}
+
+.img_text{
+    position: absolute;
+    top: 7.5rem;
+    left: 1rem;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 0.2rem;
+    height: 1.5rem;
+    width: 3.5rem;
+    padding: 0.2rem;
+}
+
+.img_text p{
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.min-cards div{
+    width: 40rem;
+    padding: 0.2rem 1rem;
+}
+
+.min-cards img{
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* -- List with famus city names (has blue lines under them) -- */
+
+#flytilbud, #flybilletter{
+    width: 60vw;
+    margin: auto;
+}
+
+#destination{
+    color: #fff;
+    width: 70vw;
+    margin: auto;
+}
+
+#destination div{
+    border-bottom: 1px solid #0095cc;
+}
+
+#destination div a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* -- Text box -- */
+
+#Box{
+    color: white;
+    width: 80vw;
+    margin: 3rem auto 1rem auto;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* -- Delete flight -- */
+
+#deleteFlight{
+    margin: 2rem auto;
+}
+
+#deleteFlight div{
+    background: white;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#deleteFlight img{
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+}
+
+#deleteFlight button{
+    margin-top: 0.5rem;
+    width: 10rem;
+    height: 2rem;
+}
+
+.deleteFlightText{
+    padding: 0.5rem;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.deleteFlightText p{
+    font-size: 0.9rem;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* -- Drop down -- */
+
+#dropDowns{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70vw;
+    margin: auto;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.dropDown{
+    border-bottom: 1px solid #0095cc;
+    display: flex;
+    color: #fff;
+    align-items: center;
+}
+
+.dropDown button {
+    background: none;
+    color: #fff;
+    width: 4rem;
+    height: 2rem;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* -- Footer -- */
+
+footer{
+    width: 100vw;
+    height: 100vh;
+    background: #130026;
+    color: white;
+}
+
+.footerInfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+/* ------------------------------------- */
+
+.footerLinks{
+    display: flex;
+    gap: 1rem;
+}
+
+.footerLinks .overskriftP{
+    font-size: 0.8rem;
+    padding: 2rem 0 0.5rem 0;
+}
+
+.footerLinks p{
+    font-size: 0.8rem;
+    padding: 0.3rem 0 0 0;
+}
+
+.footerLinks a{
+    font-size: 0.8rem;
+    padding: 0.3rem 0 0 0;
+    text-decoration: none;
+    color: #dfdede;
+}
+
+.footerLinks a:hover{
+    text-decoration: underline;
+}
+
+/* ------------------------------------- */
+
+.footerLand{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 1rem;
+    width: 88vw;
+}
+
+.footerLand div{
+    padding: 1rem 0 1rem 0;
+    border-top: 1px solid #dfdede;
+    border-bottom: 1px solid #dfdede;
+}
+
+.footerLand p{
+    font-size: 0.8rem;
+    color: #dfdede;
+}
+
+.footerLand h3{
+    text-align: start;
+    font-size: 1rem;
+    color: #dfdede;
+    font-weight: 500;
+}
+
+.footerLand button{
+    background: none;
+    color: #dfdede;
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top: 0.7rem;
+    left: 20.5rem;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* ------------------------------------- */
+
+.vilkårLinks{
+    display: flex;
+    margin-top: 2rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.vilkårLinks a{
+    color: #dfdede;
+    text-decoration: none;
+    font-size: 0.6rem;
+    opacity: 70%;
+}
+
+/* ------------------------------------- */
+
+.end{
+    color: #dfdede;
+    font-size: 0.6rem;
+    opacity: 70%;
+    text-align: center;
+}

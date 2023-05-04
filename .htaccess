@@ -1,0 +1,29 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+RewriteRule ^$                                                  /Momondo_Copy/view_index.php [NC,L]
+RewriteRule ^overnatning$                                       /Momondo_Copy/view_overnatning.php [NC,L]
+RewriteRule ^fearger$                                           /Momondo_Copy/view_fearger.php [NC,L]
+RewriteRule ^pakkerejser$                                       /Momondo_Copy/view_pakkerejser.php [NC,L]
+RewriteRule ^bil$                                               /Momondo_Copy/view_bil.php [NC,L]
+RewriteRule ^profile$                                           /Momondo_Copy/view_profile.php [NC,L]
+RewriteRule ^flight_result$                                     /Momondo_Copy/view_flight_result.php [NC,L]
+RewriteRule ^flight_result/(\w+)$                               /Momondo_Copy/view_flight_result.php?fromCity=$1 [NC,L]
+RewriteRule ^flight_result/(\w+)/(\w+)$                         /Momondo_Copy/view_flight_result.php?fromCity=$1&toCity=$2 [NC,L]
+RewriteRule ^image$                                             /Momondo_Copy/view_uploade_image.php [NC,L]
+
+RewriteRule ^login$                                             /Momondo_Copy/bridge-login.php [NC,L]
+RewriteRule ^logout$                                            /Momondo_Copy/bridge-logout.php [NC,L]
+
+RewriteRule ^api_search$                                        /Momondo_Copy/api_search.php [NC,L]
+RewriteRule ^api-signup$                                        /Momondo_Copy/api-signup.php [NC,L]
+
+RewriteRule ^app.css$                                           /Momondo_Copy/css_app.css [NC,L]
+RewriteRule ^600.css$                                           /Momondo_Copy/css_600.css [NC,L]
+
+RewriteRule ^app.js$                                            /Momondo_Copy/js_app.js [NC,L]
+RewriteRule ^validator.js$                                      /Momondo_Copy/js_validator.js [NC,L]
+RewriteRule ^search.js$                                         /Momondo_Copy/js_search.js [NC,L]
+
+ErrorDocument 404                                               /Momondo_Copy/view_404.php

@@ -1,0 +1,771 @@
+@media screen and (max-width: 600px) {
+
+    nav button{
+        position: relative;
+        top: -0.3rem;
+    }
+
+    .mobile_logo{
+        display: block;
+        width: 1.3rem;
+        top: 0;
+    }
+
+    .switch{
+        position: absolute;
+        top: 12.5rem;
+        left: 19rem;
+        border: 4px solid #0095cc;
+        width: 2rem;
+        height: 2rem;
+        background: white;
+    }
+    
+    .switch svg{
+        fill: black;
+        width: 1.5rem;
+        height: 1.5rem;
+        position: relative;
+        transform: rotate(90deg);
+    }
+
+    .carrusel_mobil_text h2, 
+    .carrusel_mobil_text p, 
+    .vis_alle, 
+    .img_button{
+        display: block;
+    }
+
+    .lastDropButton{
+        width: 28% !important;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+
+    #loginOverlay{
+        background: rgba(0, 0, 0, 50%);
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        overflow-y: auto;
+        z-index: 2;
+    }
+
+    #login {
+       width: 32vw;
+       position: absolute;
+       margin: 0 26rem 5rem 26rem;
+       top: 5rem;
+       border-radius: 0.5rem;
+    }
+    
+    .loginForm{
+        margin: 0.5rem auto 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .loginForm label{
+        margin: 0 0 0 1.2rem;
+    }
+    
+    .loginForm input{
+        width: 90%;
+        margin: 0 0 0.5rem 1.2rem;
+    }
+
+    .loginForm button{
+        width: 90%;
+        margin: 0 1.2rem;
+    }
+
+    .singupbutton{
+        width: 90%;
+        margin: 0.5rem 1.2rem 1rem 1.2rem;
+    }
+
+    .emty{
+        background: transparent;
+        height: 5vh;
+        width: 32vw;
+        position: absolute;
+        top: 45rem;
+    }
+
+    .closeLogin #logo{
+        padding: 0;
+        margin: 0.5rem 0 0 0;
+    }
+
+    /* ------------------------------------------------------------------------------- */
+
+    #signupOverlay{
+        background: rgba(0, 0, 0, 50%);
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        overflow-y: auto;
+        z-index: 2;
+    }
+
+    #signup {
+       width: 32vw;
+       position: absolute;
+       margin: 0 26rem 5rem 26rem;
+       top: 5rem;
+       border-radius: 0.5rem;
+    }
+    
+    .signupForm{
+        margin: 0.5rem auto 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .signupForm label{
+        margin: 0 0 0 1.2rem;
+    }
+    
+    .signupForm input{
+        width: 90%;
+        margin: 0 0 0.5rem 1.2rem;
+    }
+
+    .signupForm button{
+        width: 90%;
+        margin: 1rem 1.2rem;
+    }
+
+    .closeSignup #logo{
+        padding: 0;
+        margin: 0.5rem 0 0 0;
+    }
+
+    .signupBack{
+        margin: 0.5rem 2rem 1rem 1.2rem;
+    }
+
+    /* ------------------------------------------------------------------------------- */
+
+    .comp_logo{
+        display: block;
+    }
+
+    #logo{
+        width: 7rem;
+        height: 2rem;
+    }
+
+    #menu .left{
+        width: 20vw;
+    }
+
+    /* ------------------------------------------------------------------------------- */
+
+    form div{
+        flex-wrap: nowrap;
+        height: 4.2rem;
+    }
+
+    form{
+        flex-wrap: nowrap;
+    }
+ 
+    .search{
+        margin-left: 1rem;
+        position: relative;
+        top: -1.6rem;
+    }
+
+    .switch{
+        background: rgba(255,255,255,0.7);
+    }
+
+    .formSVG{
+        display: block;
+    }
+    
+    /* ------------------------------------------------------------------------------- */
+
+    #SearchFromDropDown{
+        width: 40vw;
+        margin: 0 auto 0 6.3rem;
+        z-index: 1;
+        position: absolute;
+        top: 12rem;
+        background: white;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+    }
+    
+    #SearchFromDropDown .container{
+        display: flex;
+        width: 100%;
+        gap: 1rem;
+        height: auto;
+        align-items: center;
+        background: white;
+        color: black;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    #SearchFromDropDown .container:hover{
+        background: rgba(0, 0, 0, 10%);
+        cursor: pointer;
+    }
+
+    #SearchFromDropDown .container img{
+        width: 10rem;
+        height: auto;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        height: 6rem;
+        width: 60%;
+    }
+
+    #SearchFromDropDown .container div{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+    }
+
+    #SearchFromDropDown .container div p{
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    #SearchFromDropDown .container div p b{
+        font-size: 0.9rem;
+    }
+
+    #SearchFromDropDown .container div div{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    #SearchFromDropDown .container div div p{
+        padding: 0;
+        font-size: 0.9rem;
+    }
+    
+    #SearchFromDropDown .container input{
+        width: 2rem
+    }
+
+    #SearchToDropDown{
+        width: 40vw;
+        margin: 0 auto 0 23.5rem;
+        z-index: 1;
+        position: absolute;
+        top: 12rem;
+        background: white;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+    }
+    
+    #SearchToDropDown .container{
+        display: flex;
+        width: 100%;
+        gap: 1rem;
+        height: auto;
+        align-items: center;
+        background: white;
+        color: black;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    #SearchToDropDown .container:hover{
+        background: rgba(0, 0, 0, 10%);
+        cursor: pointer;
+    }
+
+    #SearchToDropDown .container img{
+        width: 10rem;
+        height: auto;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        height: 6rem;
+        width: 60%;
+    }
+
+    #SearchToDropDown .container div{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+    }
+
+    #SearchToDropDown .container div p{
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    #SearchToDropDown .container div p b{
+        font-size: 0.9rem;
+    }
+
+    #SearchToDropDown .container div div{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    #SearchToDropDown .container div div p{
+        padding: 0;
+        font-size: 0.9rem;
+    }
+    
+    #SearchToDropDown .container input{
+        width: 2rem
+    }
+
+    /* ------------------------------------------------------------------------------- */
+
+    #searchFlight{
+        width: 80vw;
+        display: flex;
+    }
+
+    /* ------------------------------------- */
+
+    #settings{
+        display: block;
+        width: 40%;
+        height: 10rem;
+        padding: 0 1rem;
+        margin: 1rem auto;
+        height: 80rem;
+    }
+
+    #PriceAlert{
+        border-radius: 4px;
+        background: rgba(255,255,255,0.1);
+        color: white;
+        padding: 1rem;
+        width: 85%;
+        margin: auto;
+    }
+
+    #PriceAlert p{
+        font-size: 0.9rem;
+    }
+
+    .slider{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid rgba(255,255,255,0.4);
+        padding-top: 0.5rem;
+    }
+
+    #settings .DropDown{
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        width: 85%;
+        margin: 1rem auto;
+        border-bottom: 1px solid rgba(167,98,234,0.4);
+    }
+
+    .DropDown p{
+        padding-bottom: 1rem;
+        padding-left: 0.4rem;
+    }
+
+    .svg{
+        height: auto;
+        width: 10%;
+        padding-bottom: 1rem;
+        fill: white;
+    }
+
+    .svg svg{
+        width: 80%;
+    }
+
+    .FareAssistant{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .FareAssistant p{
+        padding: 0;
+        height: 1.5rem;
+    }
+
+    .GrayOutButton{
+        width: 1.2rem;
+        height: 1.2rem;
+        border: 1px solid;
+        margin: 4px 1rem;
+    }
+
+    .GrayOutButton p{
+        padding: 0;
+        text-align: center;
+        height: 17px;
+        width: 100%;
+        margin: -6px 0 0 0;
+    }
+
+    .FareAssistantButton{
+        width: 1.2rem;
+        height: 1.2rem;
+        border: 1px solid;
+        margin: 4px 1rem;
+    }
+
+    .FareAssistantButton p{
+        padding: 0;
+        text-align: center;
+        height: 17px;
+        width: 100%;
+        margin: -6px 0 0 0;
+    }
+
+    .FareAssistantDropDown{
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid;
+        height: 2rem;
+        margin: 0 0 1rem 0;
+        border-radius: 0.2rem;
+        padding: 0.1rem 0 0 0.5rem;
+        cursor: pointer;
+    }
+
+    .FareAssistantDropDown:hover{
+        background: rgba(255,255,255,0.2);
+    }
+
+    .FareAssistantDropDown .svg{
+        padding: 0;
+    }
+
+    /* ------------------------------------- */
+
+    #flights{
+        width: 70%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .flight{
+        width: 70%;
+    }
+
+    .flightInbut{
+        padding: 0 0.5rem;
+    }
+
+    .flightInbut input{
+        width: 1.5rem;
+    }
+
+    .flightContainer p{
+        font-size: 1rem;
+    }
+
+    .flightContainer p b{
+        font-size: 1rem;
+    }
+
+    .flightPrice{
+        padding: 0.5rem;
+    }
+
+    /* ------------------------------------------------------------------------------- */
+
+    #imageForm{
+        width: 40vw;
+    }
+
+    #imageForm div{
+       height: auto;
+    }
+
+    .fakeButton{
+        cursor: pointer;
+    }
+
+    /* ------------------------------------------------------------------------------- */
+
+    #options{
+        flex-wrap: nowrap;
+        margin-bottom: 3rem;
+        gap: 1rem;
+    }
+
+    .option{
+        margin-bottom: 0;
+        flex-direction: column;
+        border: 1px solid #6b15c1;
+        align-items: flex-start;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .option .left{
+        margin: 0.5rem 0 0 0.5rem;
+    }
+
+    .option .right .top{
+        margin: 0 0.5rem 0 0.5rem;
+    }
+    
+    .option .right .bottom{
+        margin: 0 0.5rem 0.5rem 0.5rem;
+    }
+
+    /* ------------------------------------------------------------------------------- */
+
+    #cards{
+        height: 30rem;
+        width: 80vw;
+        margin: auto auto 1rem auto;
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    .card div{
+        position: relative;
+        top: -14rem;
+        background: #21033a;
+        width: 31rem;
+        border-radius: 0.5rem;
+        margin: 0 0 0 2rem;
+        padding: 0.5rem;
+    }
+
+    .card .feargeCard{
+        position: relative;
+        top: -6rem;
+        background: #21033a;
+        width: 15rem;
+        border-radius: 0.5rem;
+        margin: 0 0 0 2rem;
+        padding: 0.5rem;
+    }
+
+    .card div p{
+        font-size: 1rem;
+    }
+    
+    .card img{
+        width: 100%;
+        height: 100%;
+        border-radius: 0.5rem;
+        border: none;
+    }
+
+    /* ------------------------------------------------------------------------------- */
+
+    .carrusel_comp_text{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        text-align: start;
+        width: 80vw;
+        margin: 3rem auto 1rem auto;
+        color: white;
+    }
+
+    .carrusel_comp_text h2{
+        text-align: start;
+    }
+
+    #carrusel1{
+        width: 80vw;
+        gap: 1rem;
+        overflow-x: visible;
+        overflow-y: visible;
+    }
+    
+    #carrusel1 img{
+        width: 100%;
+    }
+
+    .img_button {
+        left: 13rem;
+        padding-bottom: 0.3rem;
+    }
+
+    /* ------------------------------------------------------------------------------- */
+    
+    #carrusel2{
+        flex-wrap: nowrap;
+        width: 80vw;
+        gap: 1rem;
+        height: 15rem;
+        overflow-x: visible;
+        overflow-y: visible;
+    }
+
+    #carrusel2 .container{
+        width: 40%;
+    }
+        
+    #carrusel2 img{
+        width: 100%;
+    }
+
+    /* ------------------------------------------------------------------------------- */
+
+    #carrusel3{
+        flex-wrap: nowrap;
+        width: 80vw;
+        gap: 1rem;
+        overflow-x: visible;
+        overflow-y: visible;
+    }
+
+    #carrusel3 .container{
+        width: 40%;
+    }
+    
+    #carrusel3 img{
+        width: 100%;
+    }
+
+    /* ------------------------------------------------------------------------------- */
+
+    #min-cards{
+        flex-direction: column;
+        width: 80vw;
+        margin: auto;
+    }
+
+    #min-cards div{
+        display: flex;
+        width: 100%;
+    }
+
+    .min-cards:hover{
+        cursor: pointer;
+        background: rgba(250, 250, 250, 90%);
+    }
+
+    .min-cards div{
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        padding: 0.5rem 0.5rem;
+    }
+
+    /* ------------------------------------------------------------------------------- */
+
+    #flytilbud{
+        width: 40vw;
+    }
+
+    #destination {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: nowrap;
+    }
+
+    #destination div{
+        width: 100%;
+    }
+
+    /* ------------------------------------------------------------------------------- */
+
+    #Box{
+        width: 60vw;
+    }
+
+    /* ------------------------------------------------------------------------------- */
+
+    #deleteFlight div{
+        flex-wrap: nowrap;
+        height: 7.5rem;
+        width: 55%;
+    }
+
+    #deleteFlight button{
+        height: 7rem;
+        margin: 0;
+    }
+
+    .deleteFlightText{
+        height: 7rem !important;
+    }
+
+    /* #deleteFlight div{
+        flex-wrap: nowrap;
+        height: 10.5rem;
+    }
+
+    #deleteFlight button{
+        height: 10rem;
+        margin: 0;
+    }
+
+    .deleteFlightText{
+        height: 10rem !important;
+    } */
+
+    /* ------------------------------------------------------------------------------- */
+
+    #dropDowns{
+        width: 75vw;
+        flex-wrap: nowrap;
+    }
+
+    .extraMargin{
+        margin-bottom: 2.2rem;
+    }
+
+    /* ------------------------------------------------------------------------------- */
+
+    footer{
+        height: 60%;
+    }
+
+    .footerInfo{
+        flex-wrap: nowrap;
+        padding: 1rem 0 0 0;
+        margin: auto;
+        width: 80vw;
+        gap: 6rem;
+    }
+
+    .footerLinks{
+        justify-content: center;
+        padding: 0 1rem;
+        gap: 3rem;
+    }
+
+    #footerLand{
+        width: 100%;
+        margin: 2rem;
+        padding: 0 1rem;
+    }
+
+    .footerLand, .footerLand div{
+        width: 80%;
+    }
+
+    .footerLand button{
+        left: 15rem;
+    }
+
+
+
+}
